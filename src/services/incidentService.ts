@@ -1,7 +1,7 @@
 import type { Incident } from '../types';
 import { getToken } from '../utils/auth';
 
-const API = "http://localhost:8080/api/incidents";
+const API = "https://coldchain-backend-8hma.onrender.com/api/incidents";
 
 export async function fetchActiveIncident(): Promise<Incident | null> {
   const token = getToken();

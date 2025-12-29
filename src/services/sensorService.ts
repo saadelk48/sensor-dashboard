@@ -1,7 +1,7 @@
 import type { SensorData } from '../types';
 import   { getToken } from '../utils/auth';
 
-const API_URL = "http://localhost:8080/api/measurements";
+const API_URL = "https://coldchain-backend-8hma.onrender.com/api/measurements";
 
 export async function fetchSensorData(): Promise<SensorData[]> {
   const token = getToken();

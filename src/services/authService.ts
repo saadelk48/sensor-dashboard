@@ -1,6 +1,6 @@
 import type { LoginCredentials, LoginResponse } from '../types';
 
-const API_URL = "http://localhost:8080/api/auth";
+const API_URL = "https://coldchain-backend-8hma.onrender.com/api/auth";
 
 export async function login(credentials: LoginCredentials): Promise<LoginResponse> {
   try {
