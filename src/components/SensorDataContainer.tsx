@@ -241,7 +241,7 @@ export default function SensorDataContainer() {
           colors: '#94a3b8',
           fontSize: '12px'
         },
-        formatter: (val) => val.toFixed(1)
+        formatter: (val: number) => val.toFixed(1)
       }
     },
     tooltip: {
@@ -250,7 +250,7 @@ export default function SensorDataContainer() {
         format: 'dd MMM HH:mm'
       },
       y: {
-        formatter: (val) => `${val.toFixed(1)} °C`
+        formatter: (val: number) => `${val.toFixed(1)} °C`
       }
     },
     grid: {
@@ -327,7 +327,7 @@ export default function SensorDataContainer() {
           colors: '#94a3b8',
           fontSize: '12px'
         },
-        formatter: (val) => val.toFixed(1)
+        formatter: (val: number) => val.toFixed(1)
       }
     },
     tooltip: {
@@ -336,7 +336,7 @@ export default function SensorDataContainer() {
         format: 'dd MMM HH:mm'
       },
       y: {
-        formatter: (val) => `${val.toFixed(1)} %`
+        formatter: (val: number) => `${val.toFixed(1)} %`
       }
     },
     grid: {
